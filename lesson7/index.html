@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        #green {
+            background-color: greenyellow;
+            width: 200px;
+            height: 200px;
+        }
+
+        #red {
+            background-color: pink;
+            width: 300px;
+            height: 300px;
+        }
+
+        #blue {
+            background-color: cornflowerblue;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+<body>
+
+<!--<form action="" name="testForm" id="f">-->
+<!--    <input type="text" value="TESAIFO" name="text">-->
+<!--    <input type="checkbox" name="box">-->
+<!--    <input type="checkbox" name="box" checked>-->
+<!--    <input type="radio" name="rad" checked>-->
+<!--    <input type="radio" name="rad">-->
+
+<!--    <input type="submit" value="OK" name="submit">-->
+<!--</form>-->
+
+<!--<div id="blue">-->
+<!--    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, amet animi cupiditate eaque eveniet fugiat illo,-->
+<!--    maxime nesciunt sit temporibus voluptatibus voluptatum? Alias animi incidunt placeat quas quis repellendus sit.-->
+<!--</div>-->
+
+<!--<div id="red">-->
+<!--    <p class="myClass">-->
+<!--        XXXXX-->
+<!--    </p>-->
+
+<!--    <p class="myClass">-->
+<!--        1-->
+<!--    </p>-->
+
+<!--</div>-->
+
+<!--&lt;!&ndash;<div id="green">&ndash;&gt;-->
+
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash; cfsddsfsd &ndash;&gt;&ndash;&gt;-->
+
+<!--<p class="myClass">-->
+<!--    2-->
+<!--</p>-->
+
+<!--<p class="myClass">-->
+<!--    3-->
+<!--</p>-->
+
+
+<!--<div id="red">-->
+<!--    <div id="green">-->
+<!--        <div id="blue"></div>-->
+<!--    </div>-->
+<!--</div>-->
+
+<input type="text" id="inpt">
+<p id="p">
+
+</p>
+
+<script>
+
+    ////    const red = document.querySelectorAll('#red .myClass');
+    ////
+    ////    console.log(red);
+    ////
+    //    // let childNodes = document.body.childNodes;
+    //    //
+    //    // console.log(childNodes);
+    //    // let elementById = document.getElementById('red');
+    //    //
+    //    // elementById.setAttribute('customAtr', 'yyy')
+    //    //
+    //    // let b = elementById.hasAttribute('vybunimo');
+    //    // console.log(b);
+    //
+    //let form = document.forms.testForm;
+    //// let forms = document.forms.f;
+    //
+    //let textInpt = form.text;
+    //let box = form.box;
+    //let rad = form.rad;
+    //console.log(textInpt.value);
+    //console.log(box);
+    //console.log(rad);
+
+
+    // let blueDivka = document.getElementById('blue');
+    // let redDivka = document.getElementById('red');
+    // let greenDivka = document.getElementById('green');
+
+    // blueDivka.onclick = () => {
+    //     console.log('CLICK');
+    // }
+
+    // blueDivka.onclick = () => {
+    //     let ps = document.getElementsByTagName('p');
+    //     for (const p of ps) {
+    //         p.innerText = 'HELLO WORLD'
+    //         p.style.backgroundColor = 'blue'
+    //     }
+    // }
+
+    // blueDivka.onmouseover = () => {
+    //     blueDivka.style.display = 'none'
+    // }
+
+    // blueDivka.onmouseleave = () => {
+    //     blueDivka.style.display = 'none'
+    // }
+    //
+    // blueDivka.oncopy = () => {
+    //     blueDivka.style.display = 'none'
+    //     return false;
+    // }
+    //
+    // redDivka.onmousemove = (ev) => {
+    //     console.log(ev.x, ev.y);
+    //
+    //     redDivka.style.backgroundColor =
+    //         `rgb(${ev.x}, ${ev.y}, ${(ev.x + ev.y) / 2})`
+    // }
+    // let submitBtn = document.forms.testForm.submit;
+    // let text = document.forms.testForm.text;
+    //
+    // submitBtn.onclick = (ev) => {
+    //     ev.preventDefault();
+    //     console.log(text.value);
+    // }
+    //
+    // text.oninput = () => {
+    //     blueDivka.innerText = text.value
+    // }
+
+
+    // redDivka.addEventListener('click', (ev) => {
+    //     ev.stopPropagation();
+    //     console.log('redDivka');
+    // })
+    // greenDivka.addEventListener('click', (ev) => {
+    //     ev.stopPropagation();
+    //     console.log('greenDivka');
+    // })
+    // blueDivka.addEventListener('click', (ev) => {
+    //     ev.stopPropagation();
+    //     console.log('blueDivka');
+    // })
+
+    // let users = [
+    //     {name: 'Srg', age: 22},
+    //     {name: 'Andrew', age: 25},
+    //     {name: 'user', age: 21},
+    //     {name: 'Sasha', age: 29},
+    // ];
+    //
+    // users.forEach(user => {
+    //     const divka = document.createElement('div');
+    //     divka.innerText = `User: ${user.name}. Age: ${user.age}`;
+    //     divka.style.backgroundColor = 'cornflowerblue'
+    //     divka.style.margin = '20px';
+    //
+    //     let btn = document.createElement('button');
+    //     btn.innerText = `REMOVE ${user.name}`;
+    //
+    //     btn.onclick = (ev) => {
+    //         let index = users.findIndex(userToFind =>
+    //             userToFind.name === user.name && userToFind.age === user.age);
+    //
+    //         console.log(index);
+    //         users.splice(index, 1)
+    //
+    //
+    //         console.log('__________________________');
+    //         console.log(users);
+    //         console.log('__________________________');
+    //         // ev.target.parentElement.style.display = 'none'
+    //     }
+    //
+    //     divka.appendChild(btn)
+    //
+    //     document.body.appendChild(divka)
+    // })
+
+    // let p = document.getElementById('p');
+    // let inpt = document.getElementById('inpt');
+    //
+    //
+    // inpt.oninput = () => {
+    //     console.log(inpt.value);
+    //     p.innerText = inpt.value
+    //     let length = p.innerText.length;
+    //     console.log(length);
+    //
+    //     if (length === 40) {
+    //         let htmlButtonElement = document.createElement('div');
+    //         htmlButtonElement.innerText = 'BUTTON';
+    //         htmlButtonElement.style.display = 'inline-block'
+    //
+    //         p.appendChild(htmlButtonElement)
+    //     }
+    // }
+
+
+    // let age = 88;
+
+    let user = {
+        name: 'Dimas',
+        age: 22,
+        car: {
+            price: 5000,
+            color: 'silver'
+        }
+    }
+
+    // const {age: userAge, name, car: {price}} = user;
+    // let userAge = user.age;
+    // let name = user.name;
+    // let car = user.car;
+
+    const {age, ...other} = user
+
+
+    console.log(age);
+    other.name = 'VOVA'
+    console.log(other);
+    console.log(user);
+
+
+    const onLvlCopy = {...user, firma: true}
+    console.log(onLvlCopy);
+
+    // console.log(userAge);
+    // console.log(price);
+
+
+    const names = ['Man', 'Sasha', 'Ira', {x: 2, z: 5}]
+    const names2 = ['Man', 'Sasha', 'Ira', {x: 2, z: 5}]
+
+    // const [m, s, i, {x}] = names;
+    // const [,,,s] = names;
+    const [,m, ...spread] = names;
+
+    console.log(m);
+    console.log(spread);
+
+    // const m = names[0]
+    // const s = names[1]
+    // const i = names[2]
+    // const i = names[3]
+    // const sv = names[4]
+
+    // let copy = [...names, ...names2]
+    // let copy = [...names, 'Olga']
+    //
+    // console.log(copy);
+
+
+    // console.log(s);
+    // console.log(x);
+
+
+</script>
+</body>
+</html>
